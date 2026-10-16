@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colon cancer CNN</title>
+</head>
+<body>
+  <h1>Colon cancer CNN</h1>
+  <p>This is a convolutional neural network with 4 convolutional layers. It was trained for 50 epochs to separate 8 colorectal tissue types on the public Kather histology tiles (Zenodo, CC BY 4.0): tumor, stroma, complex stroma, lymphocytes, debris, mucosa, adipose, and empty. The same task was compared on MobileNet, VGG16, ResNet50, and EfficientNetB1. Validation accuracy was 66.83%, then 71.71% after augmentation. EfficientNetB1 had the best test accuracy, about 87%. This page runs the 4-layer network on real tiles from that dataset. Tumor is called malignant. The other classes are called benign. This is not a diagnosis.</p>
+  <div id="samples"></div>
+  <h2 id="call">Click an image</h2>
+  <p id="detail"></p>
+  <ul id="scores"></ul>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
